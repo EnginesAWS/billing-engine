@@ -1,2 +1,2 @@
-# Container service
-An application blueprint for defining an AWS container service
+# Billing Engine
+Managed Functions Billing Engine app
