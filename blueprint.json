@@ -1,8 +1,8 @@
 {
-	"identifier": "container-service",
+	"identifier": "billing-engine",
 	"about": {
-		"title": "AWS Container Service",
-		"explanation": "An application blueprint for defining an AWS container service"
+		"title": "Managed Functions Billing Engine",
+		"explanation": "Define the container service for Managed Functions Billing Engine"
 	},
 	"compute_service": {
 		"default": {
