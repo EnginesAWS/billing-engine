@@ -27,7 +27,8 @@
 		{
 			"type": "load_balancer_target_group",
 			"configuration": {
-			"identifier" : "billing-engine-tg"
+			"identifier" : "billing-engine-tg",
+			"port": 83
 			}
 		},{
 			"type": "subnet",
