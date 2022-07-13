@@ -28,6 +28,7 @@
 			"type": "load_balancer_target_group",
 			"identifier" : "billing-engine-tg",
 			"configuration": {
+			"vpc_binding" : "vpc",
 			"port": 83
 			}
 		},{
