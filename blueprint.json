@@ -23,20 +23,41 @@
 			"essential": true
  		}
 	},
-		"resources": [
+	"resources": [
+		{
+			"type": "container_task_definition",
+			"identifier": "billing-engine"
+		},
+		{
+			"type": "load_balancer",
+			"identifier": "billing-engine",
+			"configuration": {
+				"subnets": [
+					"subnet_a",
+			    		"subnet_b"
+				],
+				"security_groups": [
+					"security_group"
+				]
+			}
+		},
 		{
 			"type": "load_balancer_target_group",
-			"identifier" : "billing-engine-tg",
+			"identifier": "billing-engine",
 			"configuration": {
-			"vpc_binding" : "vpc",
-			"port": 83
+				"port": 83
 			}
-		},{
+		},
+		{
+			"type": "load_balancer_listener",
+			"identifier": "billing-engine"
+		},
+		{
 			"type": "subnet",
-			"identifier": "subnet_billing-engine",
+			"identifier": "billing-engine",
 			"configuration": {
 				"cidr_block": "10.111.40.0/24"
 			}
 		}
-		]
+	]
 }
