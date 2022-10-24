@@ -17,5 +17,14 @@
 			"container_port": 83,
 			"host_port": 83
 		}
+	],
+	"resources": [
+		{
+			"type": "subnet",
+			"identifier": "billing-engine",
+			"configuration": {
+				"cidr_block": "10.111.40.0/24"
+			}
+		}
 	]
 }
