@@ -21,9 +21,16 @@
 	"resources": [
 		{
 			"type": "subnet",
-			"identifier": "billing-engine",
+			"identifier": "^^blueprint_identifier^^_a",
 			"configuration": {
-				"cidr_block": "10.111.40.0/24"
+				"cidr_block": "10.111.83.0/24"
+			}
+		},
+		{
+			"type": "subnet",
+			"identifier": "^^blueprint_identifier^^_b",
+			"configuration": {
+				"cidr_block": "10.111.183.0/24"
 			}
 		}
 	]
